@@ -1,0 +1,16 @@
+version: "2.4"
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:8.0.23
+    volumes:
+      - ./sql-data/db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    hostname: VIP
+    environment:
+      MYSQL_DATABASE: 'ZooAppDb'
+      MYSQL_USER: 'admin'
+      MYSQL_PASSWORD: 'Admin123'
+      MYSQL_ROOT_PASSWORD: 'Admin123'
+      MYSQL_ROOT_PASSWORD: 'Admin123'

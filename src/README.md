@@ -1,0 +1,2 @@
+#Ejecutar
+docker-compose up
